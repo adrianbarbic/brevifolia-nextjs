@@ -5,7 +5,27 @@ fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
   label: title
+- name: hh
+  type: field_group_list
+  fields:
+  - name: jj
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: jj
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: hh
 pages:
 - hello-world.md
